@@ -5,8 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    @font-face {
+        font-family: Sans;
+        src: url(/public/assets/fonts/PPMori-SemiBold.otf);
+        font-weight: normal;
+        
+    }
+}
 body{
-    @apply m-0  py-2 sm:py-4 overflow-x-hidden
+    @apply m-0  py-2 sm:py-4  overflow-x-hidden box-border
 }
 .nav_items{
     @apply self-center 

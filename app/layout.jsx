@@ -11,8 +11,8 @@ const RootLayout = ({children}) => {
   return (
     <html>
         <body>
+        <Nav/>
             <main>
-              <Nav/>
                 {children}
             </main>
         </body>

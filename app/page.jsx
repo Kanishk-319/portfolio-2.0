@@ -1,15 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
+import Project from '@components/Project'
 
 const Home = () => {
   return (
     <>
-    <div className='my-[10vh] sm:my-[45vh] w-full mx-2 sm:mx-5 '>
-      <h1 className='text-[60px] sm:text-[150px]'>DESIGNING WITH PURPOSE, EMBRACING SIMPLICITY</h1>
+    <div className='mt-[10vh] sm:my-[24vh] px-2 w-full '>
+      <p className='flex flex-wrap font-interLight text-[60px] lg:text-[11.825em] sm:text-[8em] leading-none'>Designing With Purpose, Embracing Simplicity</p>
     </div>
-    <div className=' flex flex-col justify-center items-center my-[10vh] bg-black w-[110vw] sm:w-full  h-[90vh] sm:h-[120vh] text-white'>
-          <p className='font-interLight  text-[35px] md:text-[110px]
-          sm:text-[80px]
+    <div className=' flex flex-col justify-center items-center my-[21vh]  w-full   h-[50vh] sm:h-[120vh] '>
+          <p className='font-interLight  w-full text-[2.25rem] lg:text-[6.875rem] md:text-[5em]
+          sm:text-[5rem]  text-center
           '>Howdy! I’m Kanishk</p>
           <Link
           className='text-[12px] sm:text-[18px] underline'
@@ -18,6 +19,7 @@ const Home = () => {
             more
           </Link>
     </div>
+    <Project/>
     </>
     
   )
