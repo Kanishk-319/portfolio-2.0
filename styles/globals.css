@@ -14,8 +14,11 @@
     }
 }
 body{
-    @apply m-0  py-2 sm:py-4  overflow-x-hidden box-border
+    @apply m-0  pt-2 sm:pt-4  overflow-x-hidden box-border
 }
 .nav_items{
     @apply self-center 
+}
+.project_images{
+    @apply rounded-2xl
 }

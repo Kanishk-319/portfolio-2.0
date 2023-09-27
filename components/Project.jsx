@@ -1,36 +1,104 @@
 'use client'
 import Image from 'next/image';
-import { Proitems } from '@Helpers/PRItems';
-import ProjectAccordion from './ProjectAccordion';
+import { motion } from 'framer-motion';
 const Project = () => {
   return (
     <div className='flex flex-col w-full px-2 sm:px-5 font-interLight '>
-        <h3 className='flex flex-wrap font-interLight text-[60px] lg:text-[11.825em] sm:text-[8em] leading-none'>Featured Projects</h3>
-        <div className='flex flex-col sm:gap-[10vh] gap-[5vh] sm:my-[20vh] my-[10vh] p-2'>
-          {Proitems.map((item,index)=>{
-            return(
-              <ProjectAccordion item={item} key={index}/>
-            )
-          })}
-              
+      <h3 className='flex flex-wrap font-interLight text-[55px] lg:text-[11.825em] sm:text-[8em] leading-none'>Featured Projects</h3>
+      <div className='flex  gap-[5vh] w-full flex-col  sm:my-[20vh]  my-[5vh]'>
+        <div className='flex justify-around  sm:flex-row flex-col  sm:w-full h-max sm:h-max sm:p-4 sm:gap-[5vh] gap-[5vh] '>
+
+          <motion.a
+            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.2, ease: 'easeIn' }} whileHover={{
+              filter: 'brightness(75%)'
+            }}
+            className='basis-1/2 '
+            href='https://kanishk-319.github.io/MyPortfolio/'
+            target='_blank'
+          >
+            <Image
+              className='cursor-pointer project_images'
+              src='/assets/Bg/portfolio.jpg'
+              alt='portfolio_img'
+              width={700}
+              height={500}
+            />
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.2, ease: 'easeIn' }} whileHover={{
+              filter: 'brightness(75%)'
+            }}
+            className='basis-1/2 '
+            href='https://github.com/Kanishk-319/NewsRealm'
+            target='_blank'
+          >
+            <Image
+              className=' cursor-pointer project_images'
+              src='/assets/Bg/news.jpg'
+              alt='news_img'
+              width={700}
+              height={500}
+            />
+          </motion.a>
         </div>
-        
+        <div className='flex justify-around  sm:flex-row flex-col  sm:w-full h-max sm:h-max sm:p-4 sm:gap-[5vh] gap-[5vh] '>
+          <motion.a
+            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.2, ease: 'easeIn' }} whileHover={{
+              filter: 'brightness(75%)'
+            }}
+            className='basis-1/2 '
+            href='https://github.com/Kanishk-319/Chat-Application'
+            target='_blank'
+          >
+            <Image
+              className=' cursor-pointer project_images'
+              src='/assets/Bg/chat.jpg'
+              alt='chat_img'
+              width={700}
+              height={500}
+            />
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.2, ease: 'easeIn' }} whileHover={{
+              filter: 'brightness(75%)'
+            }}
+            className='basis-1/2 '
+            href='https://github.com/Kanishk-319/movieDatabase'
+            target='_blank'
+          >
+            <Image
+              className='cursor-pointer project_images'
+              src='/assets/Bg/movie1.jpg'
+              alt='database_img'
+              width={700}
+              height={500}
+            />
+          </motion.a>
+        </div>
+        <div className='flex justify-around  sm:flex-row flex-col  sm:w-full h-max sm:h-max sm:p-4 sm:gap-[5vh] gap-[5vh] '>
+          <motion.a
+            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.2, ease: 'easeIn' }} whileHover={{
+              filter: 'brightness(75%)'
+            }}
+            className='basis-1/2 '
+            href='https://prompt-harmonics.vercel.app/'
+            target='_blank'
+          >
+            <Image
+              className=' cursor-pointer project_images'
+              priority
+              src='/assets/Bg/prompt.png'
+              alt='prompt_img'
+              width={700}
+              height={500}
+            />
+          </motion.a>
+        </div>
+
+      </div>
+
+
     </div>
-//     <div className=' my-5 flex flex-row flex-wrap mt-[10vh] gap-2'>
-//     <div className=' flex flex-col  sm:basis-2/5 gap-4 basis-full border-4 border-black border-solid '>
-//          <Image
-//         className='h-[50vh] w-full object-fill self-center'
-//         src='/assets/Bg/portfolio.png'
-//         width={500}
-//         height={500}
-//         />
-//     </div>
-//     <div className=' flex  flex-col sm:basis-[58%] gap-4 basis-full '>
-//        <p className='font-interLight  w-full text-[2.25rem] lg:text-[6.875rem] md:text-[5em]
-//   sm:text-[5rem]  text-center
-//   '>PORTFOLIO 1.0</p>
-//     </div>
-// </div>
   )
 }
 
