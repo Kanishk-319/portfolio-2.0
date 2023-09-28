@@ -1,21 +1,18 @@
-'use client'
+
 import Footer from '@components/Footer'
 import Nav from '@components/Nav'
 import '@styles/globals.css'
-import { createContext} from 'react';
-import { useRef } from 'react';
+import ThemeState from '@Helpers/ThemeState'
 
-export const ThemeContext = createContext();
- const metadata = {
+ export const metadata = {
     title: 'Kanishk Singh Malik | Full-Stack Web Developer',
     description : 'Designing With Purpose, Embracing Simplicity'
 }
 const RootLayout = ({children}) => {
-    const ref = useRef(null)
   return (  
     <html>
         <body>
-        <ThemeContext.Provider value={{ref}}>
+        <ThemeState>
         <Nav />
             <main>
               
@@ -23,7 +20,7 @@ const RootLayout = ({children}) => {
               
             </main>
             <Footer/>
-          </ThemeContext.Provider>
+            </ThemeState>
         </body>
     </html>
   )

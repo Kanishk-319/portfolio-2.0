@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useContext } from 'react';
-import { ThemeContext } from '@app/layout';
+import { ThemeContext } from '@emotion/react';
 const Project = () => {
   const {ref} = useContext(ThemeContext)
   return (

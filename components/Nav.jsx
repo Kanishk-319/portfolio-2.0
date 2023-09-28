@@ -1,8 +1,8 @@
 'use client'
 import Link from 'next/link'
 import { useContext, useState, useEffect } from 'react'
-import {usePathname} from 'next/navigation';
-import { ThemeContext } from '@app/layout'
+import { usePathname } from 'next/navigation';
+import { ThemeContext } from '@emotion/react';
 const Nav = () => {
   const pathname = usePathname()
   const [showdisabled, setShowDisabled] = useState(false)
