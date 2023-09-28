@@ -27,7 +27,7 @@ const Nav = () => {
             </Link>
             <Link
             className='nav_items'
-            href='/'
+            href='/contact'
             >
             contact
             </Link>
