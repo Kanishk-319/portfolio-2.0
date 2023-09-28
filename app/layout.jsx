@@ -6,7 +6,7 @@ import { createContext} from 'react';
 import { useRef } from 'react';
 
 export const ThemeContext = createContext();
-export const metadata = {
+ const metadata = {
     title: 'Kanishk Singh Malik | Full-Stack Web Developer',
     description : 'Designing With Purpose, Embracing Simplicity'
 }
